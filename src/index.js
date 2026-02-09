@@ -42,11 +42,12 @@ function changeT(response) {
   let city = response.data.city;
 
   let descriptionElement = document.querySelector("#description")
-
-  
+  let humidityElement = document.querySelector("#humidity")
   let tempElement = document.querySelector("#change-t");
+
   tempElement.innerHTML = `${temperature}`;
   descriptionElement.innerHTML = response.data.condition.description
+  humidityElement.innerHTML = `${response.data.temperature.humidity}%`
 }
 
 function searchtemp(event) {
