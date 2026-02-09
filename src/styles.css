@@ -129,22 +129,30 @@ main {
 }
 
 .current-temperature-value {
-  font-size: 80px;
+  font-size: 88px;
+  line-height: 88px;
   font-weight: bold;
   color: #272142;
 }
 
 .current-temperature-icon {
-  font-size: 80px;
+  width: 88px;
+  height: 88px;
 }
 
 .current-temperature-unit {
   color: #f472b6; 
   font-weight: bold;
   font-size: 28px;
-  vertical-align: top;
-  margin-top: 10px;
+  margin-top: 6x;
   display: inline-block;
+}
+
+.current-temperature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
 }
 
 footer {
