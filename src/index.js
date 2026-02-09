@@ -44,12 +44,15 @@ function changeT(response) {
   let descriptionElement = document.querySelector("#description")
   let humidityElement = document.querySelector("#humidity")
   let windElement = document.querySelector("#wind")
-  let tempElement = document.querySelector("#change-t");
-
+  let tempElement = document.querySelector("#change-t")
+  let iconElement = document.querySelector("#icon");
+  
   tempElement.innerHTML = `${temperature}`;
   descriptionElement.innerHTML = response.data.condition.description
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`
   windElement.innerHTML = `${response.data.wind.speed}km/h`
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" img class="current-temperature-icon">`
+
 }
 
 function searchtemp(event) {
