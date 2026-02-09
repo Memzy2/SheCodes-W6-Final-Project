@@ -134,6 +134,10 @@ main {
   color: #272142;
 }
 
+.current-temperature-icon {
+  font-size: 80px;
+}
+
 .current-temperature-unit {
   color: #f472b6; 
   font-weight: bold;
