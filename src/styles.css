@@ -167,6 +167,10 @@ footer strong, footer a {
   color: #ec4899;
   font-weight: bold;
   text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 1px; /* Adjust this to move the line up or down */
+  text-decoration-thickness: 1px; /* Adjust this for the line weight */
+  text-decoration-color: #ec4899; /* Change to your desired color */
 }
 
 @media (max-width: 600px) {
